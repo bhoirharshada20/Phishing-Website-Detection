@@ -1,21 +1,47 @@
-# Database Schema Versions
+# Phishing Website Detection Using Machine Learning
 
-This folder contains the complete database schema CREATE scripts for each version that has been or will be released.
+## Project Overview
+This project detects suspicious websites and classifies them as Phishing or Legitimate using Machine Learning algorithms.
 
-## File Name Format
+## Algorithms Used
+1. Logistic Regression
+2. Support Vector Machine (SVM)
+3. Decision Tree
+4. Naive Bayes
 
-There is a separate CREATE script for each version of the database schema file. It uses the following format, which consists of 3 components
+## Technologies Used
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-- The name of the database schema, followed by an underscore.
-- The version string, consisting of 3 numbers separated by a period.
-- The .sql file extension
+## Dataset
+PhiUSIIL Phishing URL Dataset
 
-```txt
-<schema_name>_x.y.z.sql
-```
+Dataset Link: https://archive.ics.uci.edu/dataset/967/phiusil+phishing+url+dataset
 
-## Versioning
+## Project Features
+- Dataset preprocessing
+- Exploratory Data Analysis
+- URL feature extraction
+- Machine Learning model training
+- Model performance comparison
+- Confusion matrix visualization
+- Phishing and legitimate URL prediction
 
-It is strongly advised to use semantic versioning for the version string, as discussed at <https://semver.org/>.
+## How to Run
+1. Download or clone this repository.
+2. Install the required libraries using:
 
-Copyright (c) 2025, Oracle and/or its affiliates.
+   `pip install -r requirements.txt`
+
+3. Download the dataset from the UCI link.
+4. Place the CSV file in the project folder.
+5. Open `Phishing_Detection.ipynb` in Jupyter Notebook.
+6. Run the notebook cells in order.
+
+## Project Objective
+To identify potentially phishing websites using Machine Learning techniques and improve awareness of website security.
